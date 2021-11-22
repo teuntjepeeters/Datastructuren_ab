@@ -44,6 +44,7 @@ def read_fasta(bestandsnaam):
             seq = line
             # Sla de key op met de value in de dictionary
             fasta_dictionary[key] = seq
+        print(fasta_dictionary)
 
 
     # print de value van deze key: >NR_074491.2_Phycisphaerales
@@ -51,10 +52,36 @@ def read_fasta(bestandsnaam):
     inFile.close()
 
 
+def voorbeeld_sets():
+    """Voorbeelden met sets"""
+    fastfood = ["pizza", "kapsalon", "kipburger", "leverworst",
+                "kaas-ui-bollen", "pizza"]
+    gezond_eten = ["maïs", "suiker appel", "rodebietensalade",
+                   "wasabi"]
+    lekker_eten = ["suiker appel", "rodebietensalade", "lasagna",
+                   "wasabi"]
+
+    print(fastfood)
+
+    fastfood = set(fastfood)
+    gezond_eten = set(gezond_eten)
+    lekker_eten = set(lekker_eten)
+
+    # Union
+    print(gezond_eten.union(lekker_eten))
+
+    # Intersection
+    print(gezond_eten.intersection(lekker_eten))
+
+    # Difference
+    print(gezond_eten.difference(lekker_eten))
+    print(lekker_eten.difference(gezond_eten))
+
+
 def main():
     bestandsnaam = "Phycisphaerales.fasta"
-    read_fasta(bestandsnaam)
-
+    # read_fasta(bestandsnaam)
+    voorbeeld_sets()
 
 
 main()
