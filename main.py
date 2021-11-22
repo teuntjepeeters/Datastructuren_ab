@@ -1,16 +1,28 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def main():
+    studenten_leeftijd = {"Laurie": {"leeftijd":20,"vooropleiding": "VWO"},
+                          "Sam": {"leeftijd":20, "vooropleiding": "HAVO"},
+                          "Gideon": [23, "Software engineering"],
+                          "Lin": [17, "HAVO"],
+                          "Arthur": [17, "HAVO"],
+                          "Macha": [17, "HAVO"]}
+
+    print(studenten_leeftijd["Arthur"][1])
+    print(studenten_leeftijd["Gideon"][0])
+    print(studenten_leeftijd["Laurie"]["vooropleiding"])
+
+    # keys = list(studenten_leeftijd.keys())
+    # values = list(studenten_leeftijd.values())
+
+    #print(keys)
+    #print(values)
+
+    # teller = 0
+    # for leeftijd in values:
+    #     if leeftijd == 17:
+    #         print(keys[teller])
+    #     teller += 1
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+main()
