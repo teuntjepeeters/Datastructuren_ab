@@ -61,18 +61,20 @@ def voorbeeld_sets():
     lekker_eten = ["suiker appel", "rodebietensalade", "lasagna",
                    "wasabi"]
 
-    print(fastfood)
-
     fastfood = set(fastfood)
     gezond_eten = set(gezond_eten)
     lekker_eten = set(lekker_eten)
 
     # Union
-    print(gezond_eten.union(lekker_eten))
+    #print(gezond_eten.union(lekker_eten))
 
     # Intersection
-    print(gezond_eten.intersection(lekker_eten))
+    #print(gezond_eten.intersection(lekker_eten))
 
+    #gezond_eten = ["maïs", "suiker appel", "rodebietensalade",
+    #               "wasabi"]
+    #lekker_eten = ["suiker appel", "rodebietensalade", "lasagna",
+    #               "wasabi"]
     # Difference
     print(gezond_eten.difference(lekker_eten))
     print(lekker_eten.difference(gezond_eten))
